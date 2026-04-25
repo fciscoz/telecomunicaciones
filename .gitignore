@@ -1,0 +1,10 @@
+# Node
+node_modules/
+package-lock.json
+package.json
+
+# Scripts de generación (temporales)
+Entrega1/generar_docx.js
+
+# Claude worktrees internos
+.claude/worktrees/

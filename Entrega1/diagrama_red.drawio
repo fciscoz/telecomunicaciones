@@ -1,0 +1,109 @@
+<mxGraphModel dx="1800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===== ZONA COLOMBIA ===== -->
+    <mxCell id="zone_co" value="&lt;b&gt;Colombia&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;verticalAlign=top;opacity=40;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="20" y="40" width="580" height="420" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ZONA OCEANO / ENLACE INTERNACIONAL ===== -->
+    <mxCell id="zone_ocean" value="&lt;b&gt;Enlace Internacional&lt;/b&gt;&lt;br&gt;Cable Submarino Fibra Óptica" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1;verticalAlign=top;opacity=40;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="620" y="40" width="220" height="420" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ZONA USA ===== -->
+    <mxCell id="zone_usa" value="&lt;b&gt;Estados Unidos&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;verticalAlign=top;opacity=40;arcSize=5;" vertex="1" parent="1">
+      <mxGeometry x="860" y="40" width="760" height="420" as="geometry" />
+    </mxCell>
+
+    <!-- ===== PC USUARIO ===== -->
+    <mxCell id="pc" value="&lt;b&gt;PC Usuario (pacho)&lt;/b&gt;&lt;br&gt;IP: 192.168.128.3&lt;br&gt;Máscara: 255.255.255.0&lt;br&gt;MAC: B8:1E:A4:25:D6:4F&lt;br&gt;Adaptador: Wi-Fi 802.11ac&lt;br&gt;Bogotá, Colombia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#555555;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="40" y="180" width="180" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ROUTER / AP ===== -->
+    <mxCell id="router" value="&lt;b&gt;Router / Access Point&lt;/b&gt;&lt;br&gt;IP: 192.168.128.1&lt;br&gt;MAC: d8:21:da:e8:27:70&lt;br&gt;DHCP Server: Sí&lt;br&gt;DNS: 192.168.128.1&lt;br&gt;RTT medido: 3.33 ms&lt;br&gt;Bogotá, Colombia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="260" y="165" width="180" height="140" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ISP CGNAT ===== -->
+    <mxCell id="isp" value="&lt;b&gt;Gateway ISP (CGNAT)&lt;/b&gt;&lt;br&gt;IP: 10.129.64.1&lt;br&gt;(IP privada RFC 1918)&lt;br&gt;Tipo: Carrier-Grade NAT&lt;br&gt;RTT medido: 4.67 ms&lt;br&gt;Bogotá, Colombia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="290" width="185" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ARELION POP COLOMBIA ===== -->
+    <mxCell id="arelion_co" value="&lt;b&gt;Nodo Backbone&lt;/b&gt;&lt;br&gt;Arelion (AS1299)&lt;br&gt;IP: 62.115.41.29&lt;br&gt;PoP Colombia / Latam&lt;br&gt;RTT medido: 20.33 ms&lt;br&gt;Bogotá, Colombia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="430" y="100" width="160" height="130" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ARELION MIAMI ===== -->
+    <mxCell id="arelion_miami" value="&lt;b&gt;Nodo Backbone&lt;/b&gt;&lt;br&gt;Arelion (AS1299)&lt;br&gt;IP: 62.115.41.28&lt;br&gt;Miami, FL, USA&lt;br&gt;RTT medido: 59.33 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="880" y="120" width="160" height="115" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ARELION ATLANTA ===== -->
+    <mxCell id="arelion_atl" value="&lt;b&gt;Nodo Backbone&lt;/b&gt;&lt;br&gt;Arelion (AS1299)&lt;br&gt;IP: 62.115.138.241&lt;br&gt;Atlanta, GA, USA&lt;br&gt;RTT medido: 60 ms&lt;br&gt;(Hops 7-10: sin respuesta ICMP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="110" width="170" height="135" as="geometry" />
+    </mxCell>
+
+    <!-- ===== AMAZON CLOUDFRONT ===== -->
+    <mxCell id="cloudfront" value="&lt;b&gt;Servidor Web&lt;/b&gt;&lt;br&gt;Amazon CloudFront (CDN)&lt;br&gt;www.poli.edu.co&lt;br&gt;IP: 3.163.115.117&lt;br&gt;AS16509 Amazon.com&lt;br&gt;East Point, GA, USA&lt;br&gt;RTT medido: 58.33 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="105" width="180" height="145" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 1: PC --> Router (Wi-Fi) ===== -->
+    <mxCell id="link1" value="Wi-Fi 802.11ac&lt;br&gt;~867 Mbps&lt;br&gt;d ≈ 5 m&lt;br&gt;t_prop ≈ 0.000017 ms&lt;br&gt;t_trans ≈ 0.002 ms&lt;br&gt;t_proc+cola ≈ 1.67 ms" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0066CC;strokeWidth=2;fontSize=10;" edge="1" source="pc" target="router" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 2: Router --> ISP CGNAT (Fibra) ===== -->
+    <mxCell id="link2" value="Fibra óptica last-mile&lt;br&gt;~100 Mbps&lt;br&gt;d ≈ 2 km&lt;br&gt;t_prop ≈ 0.01 ms&lt;br&gt;t_trans ≈ 0.007 ms&lt;br&gt;t_proc+cola ≈ 0.65 ms&lt;br&gt;ΔRTT = 1.34 ms" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#FF8800;strokeWidth=2;fontSize=10;" edge="1" source="router" target="isp" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 3: ISP --> Arelion Colombia (Fibra backbone) ===== -->
+    <mxCell id="link3" value="Fibra óptica backbone&lt;br&gt;~1 Gbps&lt;br&gt;d ≈ 20 km&lt;br&gt;t_prop ≈ 0.1 ms&lt;br&gt;t_trans ≈ 0.0007 ms&lt;br&gt;t_proc+cola ≈ 7.73 ms&lt;br&gt;ΔRTT = 15.66 ms" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#FF8800;strokeWidth=2;fontSize=10;" edge="1" source="isp" target="arelion_co" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 4: Arelion CO --> Arelion Miami (Cable submarino) ===== -->
+    <mxCell id="link4" value="Cable submarino fibra óptica&lt;br&gt;~10 Gbps&lt;br&gt;d ≈ 3.200 km&lt;br&gt;t_prop ≈ 16 ms&lt;br&gt;t_trans ≈ 0.00007 ms&lt;br&gt;t_proc+cola ≈ 3.5 ms&lt;br&gt;ΔRTT = 39 ms" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#9900CC;strokeWidth=3;fontSize=10;" edge="1" source="arelion_co" target="arelion_miami" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 5: Arelion Miami --> Arelion Atlanta (Fibra terrestre) ===== -->
+    <mxCell id="link5" value="Fibra terrestre&lt;br&gt;~10 Gbps&lt;br&gt;d ≈ 1.300 km&lt;br&gt;ΔRTT ≈ 0.67 ms" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#009900;strokeWidth=2;fontSize=10;" edge="1" source="arelion_miami" target="arelion_atl" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ENLACE 6: Arelion Atlanta --> Amazon CloudFront ===== -->
+    <mxCell id="link6" value="Fibra óptica&lt;br&gt;~10 Gbps&lt;br&gt;d ≈ 10 km&lt;br&gt;ΔRTT ≈ -1.67 ms&lt;br&gt;(Hops 7-10 sin ICMP)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#009900;strokeWidth=2;fontSize=10;" edge="1" source="arelion_atl" target="cloudfront" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ===== LEYENDA ===== -->
+    <mxCell id="leyenda_title" value="&lt;b&gt;Leyenda&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="500" width="120" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="ley1" value="Enlace Wi-Fi (LAN)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#555555;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="40" y="535" width="180" height="35" as="geometry" />
+    </mxCell>
+    <mxCell id="ley2" value="Fibra óptica (ISP / Backbone nacional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="240" y="535" width="220" height="35" as="geometry" />
+    </mxCell>
+    <mxCell id="ley3" value="Cable submarino (Internacional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="480" y="535" width="210" height="35" as="geometry" />
+    </mxCell>
+    <mxCell id="ley4" value="Fibra terrestre (USA)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="710" y="535" width="180" height="35" as="geometry" />
+    </mxCell>
+
+    <!-- ===== NOTA HOPS TIMEOUT ===== -->
+    <mxCell id="nota_timeout" value="&lt;b&gt;Nota:&lt;/b&gt; Hops 7, 8, 9, 10 no respondieron a ICMP TTL Exceeded.&lt;br&gt;Son nodos intermedios en la red de Amazon que filtran este tipo de paquetes por seguridad." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860" y="300" width="480" height="60" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
